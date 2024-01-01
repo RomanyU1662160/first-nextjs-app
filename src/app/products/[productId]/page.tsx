@@ -6,8 +6,16 @@ type Props = {
 };
 
 function ProductDetails({ params }: Props) {
-  console.log(params);
-  return <h1>Product {params.productId} Details Page</h1>;
+  const productId = params.productId;
+  if (Number(productId) > 1000) {
+    throw new Error(`Product with id ${productId} is not found`);
+  }
+
+  console.log('productId', productId);
+
+  return (
+    <h1 className='text-info text-center'>Product {productId} Details Page</h1>
+  );
 }
 
 export default ProductDetails;

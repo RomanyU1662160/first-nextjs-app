@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ForgotPassword() {
-  return <h1>Forgot Password</h1>;
+  return <h1 className='text-info text-center'>Forgot Password</h1>;
 }
 
 export default ForgotPassword;

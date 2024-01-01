@@ -7,7 +7,11 @@ type Props = {
 };
 
 function ProductReviewsList({ params }: Props) {
-  return <h1>Product {params.productId} Reviews List</h1>;
+  return (
+    <h1 className='text-info text-center'>
+      Product {params.productId} Reviews List
+    </h1>
+  );
 }
 
 export default ProductReviewsList;
